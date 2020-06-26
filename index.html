@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<span class="clear" onclick="clearResult()">C</span>
+		<input id="result" class="screen" type="text" style="width: 70%;">
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span class="Btn" onclick="getNumber('7')">7</span>
+		<span class="Btn" onclick="getNumber('8')">8</span>
+		<span class="Btn" onclick="getNumber('9')">9</span>
+		<span class="operator" onclick="getNumber('+')">+</span>
+		<span class="Btn" onclick="getNumber('4')">4</span>
+		<span class="Btn" onclick="getNumber('5')">5</span>
+		<span class="Btn" onclick="getNumber('6')">6</span>
+		<span class="operator" onclick="getNumber('-')">-</span>
+		<span class="Btn" onclick="getNumber('1')">1</span>
+		<span class="Btn" onclick="getNumber('2')">2</span>
+		<span class="Btn" onclick="getNumber('3')">3</span>
+		<span class="operator" onclick="getNumber('/')">÷</span>
+		<span onclick="getNumber('0')">0</span>
+	
+		<span  onclick="getResult()">=</span>
+		<span  class="operator" onclick="getNumber('*')">x</span>
+	</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
